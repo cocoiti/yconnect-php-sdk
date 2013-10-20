@@ -1,0 +1,37 @@
+{
+  "name": "yconnect/yconnect",
+  "description": "YConnect PHP SDK",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "YConnect",
+      "email": "yconnect-pj-dev@ml.yahoo-corp.jp"
+    }
+  ],
+  "require": {
+    "luciferous/jwt": "*"
+  },
+
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "luciferous/jwt",
+        "version": "0.0.0",
+        "source": {
+          "url": "https://github.com/luciferous/jwt.git",
+          "type": "git",
+          "reference": "master"
+        }
+      },
+      "url": "https://github.com/luciferous/jwt.git"
+    }
+  ],
+
+  "require-dev": {
+    "phpunit/phpunit": "3.7.*"
+  },
+  "autoload": {
+    "psr-0": { "": "lib/" }
+  }
+}
